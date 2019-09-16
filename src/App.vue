@@ -1,8 +1,10 @@
 <template>
   <div class="container">
     <SearchBar @termChange="onTermChange"></SearchBar>
-    <VideoDetail :video="selectedVideo" /> <!-- " v-bind: "  =   " : "   used to pass PROPS -->
-    <VideoList :myVideos="videos" @videoSelect="onVideoSelect" ></VideoList>  <!-- " v-bind: "  =   " : "   used to pass PROPS -->
+    <div class="row" >
+      <VideoDetail :video="selectedVideo" /> <!-- " v-bind: "  =   " : "   used to pass PROPS -->
+      <VideoList :myVideos="videos" @videoSelect="onVideoSelect" ></VideoList>  <!-- " v-bind: "  =   " : "   used to pass PROPS -->
+    </div>
   </div>
 </template>
 
@@ -11,8 +13,9 @@ import axios from "axios";
 import SearchBar from "./components/SearchBar";
 import VideoList from "./components/VideoList";
 import VideoDetail from "./components/VideoDetail";
-const API_KEY = "AIzaSyAERlztz7MuiAY2IA_8nnQGUPoWrBIgwOU";
 
+
+const API_KEY = "AIzaSyAERlztz7MuiAY2IA_8nnQGUPoWrBIgwOU";
 
 export default {
   name: "App",

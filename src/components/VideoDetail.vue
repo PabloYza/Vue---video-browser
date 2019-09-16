@@ -1,7 +1,7 @@
 <template>
-  <div v-if="video" > <!-- conditional rendering statement - if truthy it will render the DIV / falsy it will not -->
-    <div>
-      <iframe :src="videoUrl" />
+  <div v-if="video" class="col--md-8"> <!-- conditional rendering statement - if truthy it will render the DIV / falsy it will not -->
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe :src="videoUrl" class="embed-responsive-item"/>
     </div>
     <div class="details">
       <h4>{{ video.snippet.title }}</h4>

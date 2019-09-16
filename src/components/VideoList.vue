@@ -1,5 +1,5 @@
 <template>
-  <ul class="list-group">
+  <ul class="list-group col-md-4" >
     <!-- " v-bind: " = " : " -->
     <VideoListItem
     v-for="video in myVideos"
@@ -28,8 +28,3 @@ export default {
   props: ['myVideos']
 };
 </script>
-
-
-<style>
-
-</style>
