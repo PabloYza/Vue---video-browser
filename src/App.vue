@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <SearchBar @termChange="onTermChange"></SearchBar>
     <VideoList :myVideos="videos" ></VideoList>  <!-- " v-bind: "  =   " : "   used to pass PROPS -->
   </div>
@@ -37,8 +37,6 @@ export default {
         })
         .then(response => {
           this.videos = response.data.items;
-          console.log(this.videos);
-
         });
     }
   }

@@ -1,7 +1,7 @@
 <template>
-  <ul>
+  <ul class="list-group">
     <!-- " v-bind: " = " : " -->
-    <VideoListItem
+    <VideoListItem 
     v-for="video in myVideos"
     :video="video"
     :key="video.etag"
