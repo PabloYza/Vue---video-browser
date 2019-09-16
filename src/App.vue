@@ -11,6 +11,7 @@ import SearchBar from "./components/SearchBar";
 import VideoList from "./components/VideoList";
 const API_KEY = "AIzaSyAERlztz7MuiAY2IA_8nnQGUPoWrBIgwOU";
 
+
 export default {
   name: "App",
   components: {
@@ -35,7 +36,9 @@ export default {
           }
         })
         .then(response => {
-          this.videos = response.data.items
+          this.videos = response.data.items;
+          console.log(this.videos);
+
         });
     }
   }
